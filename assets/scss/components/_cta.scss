@@ -1,5 +1,5 @@
 .site-cta{
-  padding: 130px 0;
+  padding: 300px 0;
   background-size: cover;
   background-position: center center;
   @include desktop{
@@ -10,6 +10,7 @@
     font-weight: 700;
     letter-spacing: 10px;
     margin-bottom: 60px;
+    color: $white;
     @include desktop{
       letter-spacing: 5px;
     }

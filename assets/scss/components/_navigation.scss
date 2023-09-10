@@ -1,6 +1,6 @@
 .site-navigation{
   padding: 0 0;
-  background: $black;
+  background: $gray;
   position: fixed;
   top: 0;
   width: 100%;
@@ -8,7 +8,8 @@
   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 
   @include desktop{
-    background: $black;
+    padding-bottom: 10px;
+    background: $gray;
     margin: 10px;
     border-radius: 5px;
     top: 0;
@@ -32,7 +33,7 @@
     }
     .nav-link{
       font-family: $secondary-font;
-      color: $white;
+      color: $text-color-dark;
       transition: all .3s ease;
       padding: 15px 18px;
       position: relative;

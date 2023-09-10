@@ -25,8 +25,8 @@ sections:
   create: all
   match: "*"
 - type: directory
-  path: content/blog
-  label: Blog
+  path: content/locations
+  label: Locations
   create: all
   match: "**/*"
 - type: directory
