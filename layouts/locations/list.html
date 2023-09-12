@@ -6,9 +6,9 @@
       <div class="col-lg-8">
         <div class="site-locations-header-content">
           <h1>
-            {{ .Params.locations.title | safeHTML }}
+            {{ .Site.Params.locations.title | safeHTML }}
           </h1>
-          <span> {{ .Params.locations.subheading | safeHTML }} </span>
+          <span> {{ .Site.Params.locations.subtitle | safeHTML }} </span>
         </div>
       </div>
       <div class="col-lg-4">
