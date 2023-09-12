@@ -1,17 +1,17 @@
 {{ define "main" }}
 
-<section class="site-location-header">
+<section class="site-locations-header">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-8">
-        <div class="site-location-header-content">
+        <div class="site-locations-header-content">
           <h1>
             {{ .Title | safeHTML }}
           </h1>
         </div>
       </div>
       <div class="col-lg-4">
-        <a href="#project" class="site-locations-header-action scroll-to">
+        <a href="#locations" class="site-locations-header-action scroll-to">
           <span>Scroll Down</span>
           <img src="{{ "images/arrow-down.svg" | absURL }}" alt="arrow-down">
         </a>
@@ -20,16 +20,16 @@
   </div>
 </section>
 
-<section class="site-location" id="location">
+<section class="site-locations" id="locations">
   <div class="container">
     <div class="row">
       {{ range (.Paginator 4).Pages }}
       <div class="col-lg-6 col-md-10 mx-auto">
-        <div class="site-location-item">
-          <div class="site-location-item-thumb">
+        <div class="site-locations-item">
+          <div class="site-locations-item-thumb">
             <img src="{{ .Params.Image | absURL }}" alt="location-thumb">
           </div>
-          <div class="site-location-item-content">
+          <div class="site-locations-item-content">
             <h3>{{ .Title }}</h3>
             <a href="{{ .Permalink }}" class="read-more">view location</a>
           </div>
@@ -37,7 +37,7 @@
       </div>
       {{ end }}
       <div class="col-12">
-        <div class="site-location-pagination">
+        <div class="site-locations-pagination">
           {{ template "_internal/pagination.html" . }}
         </div>
       </div>
