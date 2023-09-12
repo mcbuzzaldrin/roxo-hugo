@@ -110,12 +110,12 @@
     &-content{
       h1{
         font-size: 55px;
-        span{
-          color: $primary-color;
-        }
         @include tablet{
           font-size: 40px;
         }
+      }
+      span{
+        color: $primary-color;
       }
       @include desktop{
         text-align: center;
