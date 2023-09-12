@@ -1,27 +1,27 @@
 {{ define "main" }}
 
-<section class="site-location-single-section">
+<section class="site-locations-single-section">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        <div class="site-location-single">
+        <div class="site-locations-single">
           <h1>
             {{ .Title }}
           </h1>
-          <div class="site-location-single-description">
+          <div class="site-locations-single-description">
             {{ .Content }}
           </div>
-          <div class="site-location-single-image">
+          <div class="site-locations-single-image">
             {{ range .Params.location_images }}
             <img src="{{ . | absURL }}" alt="location image">
             {{ end }}
           </div>
           {{ if .NextInSection }}
-          <div class="site-location-single-action">
+          <div class="site-locations-single-action">
             <a href="{{.NextInSection.Permalink}}">
               <span class="link-area">
                 <span data-text="Next Location">
-                  Next Project
+                  Next Location
                 </span>
               </span>
               <img src="{{ "images/to-top.svg" | absURL }}" alt="next location">
