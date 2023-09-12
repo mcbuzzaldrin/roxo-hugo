@@ -1,5 +1,5 @@
 .site-locations{
-  padding-top: 20%;
+  padding-top: 10%;
   overflow: hidden;
   &-item{
     position: relative;
@@ -45,7 +45,7 @@
         display: block;
         width: 100%;
         color: $primary-color;
-        opacity: 0;
+        opacity: 1;
         transform: translateY(20px);
         transition: all 0.3s $site-ease;
         @include tablet{
